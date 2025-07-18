@@ -1,10 +1,12 @@
-# Ripple Hover Effect Website
+# Ripple Hover Effect (Upgraded)
 
-This is a minimal website that creates ripple effects wherever your mouse hovers on the screen. Built with HTML, CSS, and JavaScript.
+This version adds:
+- A full color picker to customize ripple color
+- A ripple type selector with 5 options:
+  - Soft Pulse
+  - Hard Pulse
+  - Glow
+  - Square
+  - Wave
 
-## How to Use
-
-1. Upload this to GitHub and enable GitHub Pages.
-2. Point your Squarespace domain to the GitHub Pages link using custom DNS settings.
-
-Enjoy the ripple effect!
+Built with HTML, CSS, and JavaScript.
