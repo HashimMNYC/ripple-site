@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced Ripple Hover Effect</title>
+  <title>Ordimerci Ripple Site</title>
   <style>
     html, body {
       margin: 0;
@@ -66,6 +66,11 @@
     </select>
   </div>
 
+  <audio id="bgMusic" loop>
+    <source src="audio/sunnydays.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <script>
     const colorPicker = document.getElementById("colorPicker");
     const rippleType = document.getElementById("rippleType");
@@ -74,32 +79,23 @@
       const ripple = document.createElement('div');
       ripple.className = 'ripple';
 
-      // Custom ripple styling
       ripple.style.background = colorPicker.value;
       ripple.style.left = e.pageX - 20 + 'px';
       ripple.style.top = e.pageY - 20 + 'px';
       ripple.style.width = ripple.style.height = rippleType.value === "square" ? '40px' : '40px';
       ripple.style.borderRadius = rippleType.value === "square" ? '0%' : '50%';
       ripple.style.boxShadow = rippleType.value === "glow" ? `0 0 15px ${colorPicker.value}` : 'none';
-
-      // Set animation based on ripple type
       ripple.style.animationDuration = rippleType.value === "hard" ? '0.3s' :
                                        rippleType.value === "wave" ? '1s' : '0.6s';
 
       document.body.appendChild(ripple);
-
-      setTimeout(() => {
-        ripple.remove();
-      }, 1000);
+      setTimeout(() => ripple.remove(), 1000);
     });
-  </script>
 
-  <!-- Mailchimp Pop-Up Script -->
-  <script id="mcjs">
-    !function(c,h,i,m,p){
-      m=c.createElement(h),p=c.getElementsByTagName(h)[0],
-      m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
-    }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/16b5c5068e2de0bc36b56c8b2/29c2db2697c5b5e840b62ddb7.js");
+    window.addEventListener('click', () => {
+      const audio = document.getElementById('bgMusic');
+      audio.play().catch(e => console.warn('Autoplay blocked:', e));
+    }, { once: true });
   </script>
 </body>
 </html>
