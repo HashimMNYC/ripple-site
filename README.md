@@ -1,12 +1,27 @@
-# Ripple Hover Effect (Upgraded)
+█▀█ █ █▀█ █▀█ █░░ █▀▀
+█▀▄ █ █▀▀ █▀▀ █▄▄ ██▄
 
-This version adds:
-- A full color picker to customize ripple color
-- A ripple type selector with 5 options:
-  - Soft Pulse
-  - Hard Pulse
-  - Glow
-  - Square
-  - Wave
+█░█ █▀█ █░█ █▀▀ █▀█
+█▀█ █▄█ ▀▄▀ ██▄ █▀▄
 
-Built with HTML, CSS, and JavaScript.
+█▀▀ █▀▀ █▀▀ █▀▀ ▀█▀
+██▄ █▀░ █▀░ ██▄ ░█░
+
+
+An enhanced ripple hover effect with customizable features:
+
+Color Picker: Choose any ripple color using a full color picker.
+
+Ripple Types: Select from five unique ripple animations:
+
+Soft Pulse
+
+Hard Pulse
+
+Glow
+
+Square
+
+Wave
+
+Built using simple HTML, CSS, and JavaScript.
